@@ -35,11 +35,11 @@ mass_cols = 11;
 Set the range of the parameter you wish to explore. In this case it is the real and imaginary components of the constant.
 
 ```
-c_r_low = -0.8;
-c_r_high = -1.0;
+c_r_low = -1.0;
+c_r_high = 1.0;
 
-c_i_low = -0.4;
-c_i_high = -0.6;
+c_i_low = -1.0;
+c_i_high = 1.0;
 ```
 
 Tweak the exponent and zoom.
