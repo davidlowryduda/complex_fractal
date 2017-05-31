@@ -3,7 +3,9 @@ A multi-threaded Python program using Numpy, MatplotLib to explore different typ
 
 # Requirements
 
-Python 3, Numpy library, MatplotLib. For Windows you should download and install WinPython which comes with all of this.
+Python 3, Numpy library, MatplotLib. 
+
+For Windows you should download and install WinPython which comes with all of this. To run the program I recommend using "WinPython Powershell Prompt.exe" in the WinPython install directory.
 
 # Usage
 
