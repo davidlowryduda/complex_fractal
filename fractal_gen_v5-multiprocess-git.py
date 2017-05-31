@@ -52,29 +52,29 @@ euler = 2.7182818284590452353602874;
 #params = (0.6250, -0.5625, 6, 120, 5, 2.5); #dd
 
 #c_r, c_i, exponent, iterations, limit_sq_dist, zoom
-params = (0.4, -0.1, 2, 120, 5, 5);
+params = (0.4, -0.1, 2, 120, 5, 2.5);
 
-c_r_low = -0.8;
-c_r_high = -1.0;
+c_r_low = -1.0;
+c_r_high = 1.0;
 
-c_i_low = -0.4;
-c_i_high = -0.6;
+c_i_low = -1.0;
+c_i_high = 1.0;
 
-if (1):
+if (0):
 	c_r_low = -4.0;
 	c_r_high = 4.0;
 
 	c_i_low = -4.0;
 	c_i_high = 4.0;
 
-if (1):
+if (0):
 	c_r_low = -2.0;
 	c_r_high = 2.0;
 
 	c_i_low = -2.0;
 	c_i_high = 2.0;
 	
-if (1):
+if (0):
 	c_r_low = -1.0;
 	c_r_high = 1.0;
 
@@ -132,8 +132,13 @@ def draw(c_r, c_i, exponent, iterations, limit_squared_distance, zoom, filename,
 		# The line that performs the iteration. Change the formula to obtain new classes of fractals.
 		data = np.select( \
 			(np.less_equal(squared_distances, limit_squared_distance), np.ones((img_y, img_x), dtype=bool)), \
-			(np.exp(np.complex(0.0, 1.0) * np.power(data, exponent)) + c_constant, data) \
+			(np.power(data, exponent) + c_constant, data) \
 			)
+		
+		#data = np.select( \
+	#		(np.less_equal(squared_distances, limit_squared_distance), np.ones((img_y, img_x), dtype=bool)), \
+	#		(np.exp(np.complex(0.0, 1.0) * np.power(data, exponent)) + c_constant, data) \
+	#		)
 			
 	# Sets remaining values for coordinates didn't hit the limit to iteration (one above max of others)
 	iteration_data = np.select( \
