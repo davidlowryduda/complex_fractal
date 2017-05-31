@@ -52,7 +52,7 @@ params = (0.4, -0.1, 2, 120, 5, 5);
 
 These values represent (c_real, c_imaginary, exponent, iterations, limit_sq_dist, zoom). The first two parameters do nothing in this case. You don't need to tweak iterations and limit_sq_dist. Leave the exponent at 2 for starting out.
 
-Run the program.
+Run the program. Don't worry about the warnings.
 
 ```
 ./python fractal_gen_v5-multiprocess-git.py
@@ -77,7 +77,7 @@ params = (0.4, -0.1, 2, 120, 5, 5);
 
 These values represent (c_real, c_imaginary, exponent, iterations, limit_sq_dist, zoom). The first two parameters specify the real and imaginary compnents of the fractal. You can use values for fractals you obtained in the above section for a more detailed view of a fractal. You don't need to tweak iterations and limit_sq_dist. Leave the exponent at 2 for starting out.
 
-Run the program.
+Run the program. Don't worry about the warnings.
 
 ```
 ./python fractal_gen_v5-multiprocess-git.py
