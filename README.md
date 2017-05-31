@@ -103,4 +103,4 @@ The 4th line here specifies the function for the iteration. You can change it to
 (np.sin(np.power(data, exponent))) + c_constant, data)
 ```
 
-To add a sine function into the mix and change the type of fractal generated. Play around with different functions such as exp(), log(), cos(), tan(), try negative exponents, different exponents, and any other you can think of. Remember that sine can be expressed in terms of exponential functions.
+To add a sine function into the mix and change the type of fractal generated. Play around with different functions such as exp(), log(), cos(), tan(), try negative exponents, different exponents, complex exponents and any other you can think of. Remember that sine can be expressed in terms of exponential functions.
