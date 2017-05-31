@@ -1,6 +1,10 @@
 # complex_fractal
 A multi-threaded Python program using Numpy, MatplotLib to explore different types of fractals.
 
+# Requirements
+
+Python 3, Numpy library, MatplotLib. For Windows you should download and install WinPython which comes with all of this.
+
 # Usage
 
 Find this line
